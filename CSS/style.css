@@ -1,0 +1,408 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+/* FONT from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+p {
+  margin: 10px;
+}
+
+img {
+  width: 100%;
+}
+
+/* NAV BAR */
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  color: white;
+  opacity: 0.8;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0px;
+  padding: 0px 30px;
+  transition: 0.5s ease-in;
+}
+
+.nav-bar a {
+  padding: 10px 20px;
+  margin: 0 5px;
+  color: white;
+}
+
+.nav-bar a:hover {
+  border-bottom: #ffc0cb 2px solid;
+}
+
+.nav-bar ul {
+  display: flex;
+
+}
+
+.nav-bar h1 {
+  font-weight: 400px;
+}
+
+.nav-bar.top {
+  background: transparent;
+}
+
+
+/* HERO IMAGE HEADER SECTION */
+
+.hero {
+  background: url('/image_resources/image_resources/NAILS/white.nails.unsplash.jpg') no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  color: #ffc0cb;
+  background-position: 50% 70%;
+}
+
+
+.hero .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  padding: 0px 20px;
+}
+
+/* hero content animation  */
+.hero .content h1 {
+  transform: translateY(-1200px);
+  animation: heading 1s forwards ease-in;
+}
+
+.hero .content p {
+  transform: translateX(-1200px);
+  animation: paragraph 2s forwards ease-in;
+}
+
+.hero .content a {
+  transform: translateX(-1200px);
+  animation: btn 2.5s forwards ease-in;
+}
+
+.hero .content #welcome-font {
+  font-size: 55px;
+  font-family: 'Lobster', cursive;
+}
+
+@keyframes heading {
+  to {
+    transform: translateY(0px)
+  }
+}
+
+@keyframes paragraph {
+  to {
+    transform: translateY(0px)
+  }
+}
+
+@keyframes btn {
+  to {
+    transform: translateY(0px)
+  }
+}
+
+
+.hero .content p {
+  font-size: 23px;
+  max-width: 600px;
+  margin: 20px 0 3px;
+}
+
+.hero .content .mid-p {
+  font-size: 15px;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero * {
+  z-index: 10;
+}
+
+.hero.blog {
+  background: url('/image_resources/image_resources/home/blog.jpg') no-repeat center center/cover;
+  height: 30vh;
+}
+
+/* ABOUT ICONS / SECTION 2 */
+.icons {
+  padding: 30px;
+}
+
+.icons h3 {
+  font-weight: bold;
+  margin: 15px;
+}
+
+.icons i {
+  background: #28a745;
+  color: white;
+  padding: 1rem;
+  border-radius: 100%;
+}
+
+.icons img {
+  border-radius: 50%;
+  border: #ffc0cb solid .5px;
+}
+
+.icons .service-list {
+  text-align: center;
+}
+
+/* THIRD SECTION CASES */
+
+.cases img:hover {
+  opacity: 0.7;
+}
+
+
+/* 6th section for meet the team */
+
+.team .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: space-between;
+  text-align: center;
+}
+
+.team .column {
+  flex: 1;
+}
+
+.team .column img {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 100%;
+  height: 350px;
+
+}
+
+.team .section-header li {
+  padding: 10px;
+}
+
+/*  CALL BACK FORM LAST SECTION */
+
+
+.contact .column .column-2 #fb-message {
+  display: inline;
+}
+
+.callback-form {
+  width: 100%;
+  padding: 20px 0;
+
+}
+
+.callback-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.callback-form .form-control {
+  margin-bottom: 15px;
+}
+
+.callback-form input {
+  width: 100%;
+  padding: 4px;
+  height: 40px;
+  border: #f5f5f5 1px solid;
+}
+
+.callback-form input:focus {
+  outline-color: #28a745;
+}
+
+.callback-form .btn {
+  padding: 12px 0;
+  margin-top: 20px;
+}
+
+
+/* BLOG POST PAGE */
+.post {
+  padding: 50px 30px;
+}
+
+.post h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-bottom: gray solid 1px;
+}
+
+.post .meta {
+  margin-bottom: 30px;
+}
+
+.post img {
+  width: 300px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 30px;
+}
+
+
+/* FULL SERVICE LIST SECTION */
+
+.servicelistpage {
+  background: #333;
+  color: #ffc0cb;
+}
+
+.servicelist .row {
+  display: flex;
+  background: #333;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+
+.servicelist .servicecolumn,
+.servicelist .servicecolumn2 {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  background: #333;
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.servicelist .service-text {
+  padding-top: 90px;
+  margin: 0px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.servicelist li:nth-child() {
+  color: white;
+
+}
+
+
+
+
+/* FOOOTER SECTION */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+}
+
+.footer .social>* {
+  margin-right: 10px;
+}
+
+.footer a:hover {
+  color: #ffc0cb;
+}
+
+.footer a {
+  color: white;
+}
+
+.footer p {
+  color: white;
+  font-size: 20px;
+}
+
+
+/* MOBILE MEDIA QUERY */
+
+@media(max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+    height: 120px;
+    padding: 20px;
+  }
+
+  .nav-bar a {
+    padding: 0px 3px;
+    margin: 0 3px;
+  }
+
+  /* Make icons stack on top of each other  */
+  .flex-items {
+    flex-direction: column;
+  }
+
+  /* make the pics and content stack on top of each other */
+  .flex-columns .row .column,
+  .flex-grid .row .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .team .flex-items img {
+    width: 70%;
+  }
+
+  /* SERVICE LIST PAGE */
+
+  .servicelist .service-text {
+    padding: 10px 0px;
+    margin-top: 110px;
+  }
+
+  .servicelistpage .nav-bar {
+    background: #333
+  }
+
+}
