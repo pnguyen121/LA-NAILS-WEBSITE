@@ -14,6 +14,7 @@ body {
   background: #fff;
   color: #333;
   line-height: 1.6;
+  height: 100%;
 }
 
 ul {
@@ -299,12 +300,6 @@ img {
   color: #ffc0cb;
 }
 
-.servicelist .row {
-  display: flex;
-  background: #333;
-  flex-wrap: wrap;
-  height: 100%;
-}
 
 
 .servicelist .servicecolumn,
@@ -319,19 +314,40 @@ img {
   text-align: center;
 }
 
-.servicelist .service-text {
-  padding-top: 90px;
-  margin: 0px;
-  text-align: center;
-  color: white;
-  font-weight: bold;
-}
-
 .servicelist li:nth-child() {
   color: white;
 
 }
 
+/* NEW SERVICES PAGE */
+
+.servicelist {
+  width: 100%;
+  overflow: hidden;
+}
+
+.servicelist .service-text {   
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    background: #333;
+    width: 100%;
+    height: 250px;
+    padding-top: 12%;
+    font-size: 20px;
+}
+
+.row {
+  display: flex;
+
+
+}
+.row .column-price{
+  height: 100%;
+  width: 33.33%;
+  border: .5px solid #ffc0cb;
+  
+}
 
 
 
@@ -371,38 +387,54 @@ img {
     flex-direction: column;
     height: 120px;
     padding: 20px;
+    border-bottom: 1px #ffc0cb;
   }
 
   .nav-bar a {
     padding: 0px 3px;
     margin: 0 3px;
+    border-bottom: 1px solid #ffc0cb;
   }
 
-  /* Make icons stack on top of each other  */
+  /* Make icons stack on top of each other 
   .flex-items {
     flex-direction: column;
   }
 
   /* make the pics and content stack on top of each other */
-  .flex-columns .row .column,
+  /* .flex-columns .row .column,
   .flex-grid .row .column {
     flex: 100%;
     max-width: 100%;
-  }
+  } */
 
-  .team .flex-items img {
+  /* .team .flex-items img {
     width: 70%;
-  }
+  } */
 
   /* SERVICE LIST PAGE */
 
   .servicelist .service-text {
-    padding: 10px 0px;
-    margin-top: 110px;
+    padding-top: 35%;
+    padding-bottom: 15%;
+    height: 100%;
+    margin: auto;
+    margin-top: 1%;
+    
   }
 
   .servicelistpage .nav-bar {
     background: #333
   }
 
+  .price-images {
+    margin:50px 0px 50px 0px;
+    
+  }
+
+  .row img {
+    height: 100%;
+    object-fit: fill;
+  }
+  
 }
