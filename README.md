@@ -4,7 +4,7 @@ Created a full website for a local nail salon in Lawrenceburg Indiana, they prev
 Project Link -------> https://monumental-semolina-ca5f46.netlify.app/ <-----
 
 Tech used:
-This project was one of my first ones and was created using HTML, CSS, and JavaScript. I hosted it using netlify to be live on the internet.
+This project was one of my first ones and was created using HTML, CSS, and JavaScript. I hosted it using netlify to be live on the internet. Full mobile styling and CSS was all done from scratch. No stylers used like bootstrap or materialize.
 
 Landing Page Images:
 <img width="1437" alt="image" src="https://user-images.githubusercontent.com/103158026/210429938-d271cfc9-2c27-4243-842b-6e1088689a58.png">
